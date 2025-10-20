@@ -1,0 +1,89 @@
+/* Basic reset and font */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    color: #0366d6; /* GitHub blue */
+}
+
+/* Main repository container */
+#repos-container {
+    display: grid;
+    /* Create responsive columns */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Loading message style */
+#loading-message {
+    font-size: 1.2em;
+    text-align: center;
+    grid-column: 1 / -1; /* Make it span all columns */
+}
+
+/* Individual repo card */
+.repo-card {
+    background-color: #ffffff;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.repo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.repo-card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.25em;
+    word-break: break-all;
+}
+
+.repo-card h3 a {
+    text-decoration: none;
+    color: #0366d6;
+}
+
+.repo-card h3 a:hover {
+    text-decoration: underline;
+}
+
+.repo-card p {
+    font-size: 0.9em;
+    color: #586069;
+    margin-bottom: 16px;
+    /* Limit description to 3 lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Stats at the bottom of the card */
+.repo-stats {
+    font-size: 0.8em;
+    color: #586069;
+}
+
+.repo-stats span {
+    margin-right: 16px;
+}
