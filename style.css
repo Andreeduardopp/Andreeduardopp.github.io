@@ -1,89 +1,192 @@
-/* Basic reset and font */
+/* Apply smooth scrolling when a user clicks a link */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0a192f; /* Dark navy blue background */
+    color: #ccd6f6; /* Light grey/blue text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 20px;
-    background-color: #f4f7f6;
-    color: #333;
+    padding: 0;
 }
 
-/* Header styling */
-header {
+/* --- Hero Section Styles --- */
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    height: 100vh; /* Make it take the full screen height */
+    padding: 0 20px;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    color: #64ffda; /* Bright mint green for the name */
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.cta-buttons {
+    margin: 20px 0;
+}
+
+.button {
+    color: #64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    padding: 12px 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+}
+
+.social-links {
+    margin-top: 25px;
+}
+
+.social-links a {
+    color: #a8b2d1;
+    font-size: 1.8rem;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #64ffda;
+}
+
+
+/* --- General Section Styles --- */
+main {
+    padding: 0 20px;
+}
+
+section {
+    max-width: 1000px;
+    margin: 100px auto; /* Vertical spacing between sections */
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #ccd6f6;
+    border-bottom: 2px solid #233554;
+    padding-bottom: 10px;
     margin-bottom: 40px;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 20px;
 }
 
-header h1 {
-    color: #0366d6; /* GitHub blue */
-}
-
-/* Main repository container */
-#repos-container {
+/* --- Work/Projects Section --- */
+.projects-grid {
     display: grid;
-    /* Create responsive columns */
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-/* Loading message style */
-#loading-message {
-    font-size: 1.2em;
-    text-align: center;
-    grid-column: 1 / -1; /* Make it span all columns */
+.project-card {
+    background-color: #112240; /* Slightly lighter navy */
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Individual repo card */
-.repo-card {
-    background-color: #ffffff;
-    border: 1px solid #d1d5da;
-    border-radius: 6px;
-    padding: 16px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.repo-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.repo-card h3 {
+.project-card h3 {
+    color: #64ffda;
     margin-top: 0;
-    margin-bottom: 8px;
-    font-size: 1.25em;
-    word-break: break-all;
 }
 
-.repo-card h3 a {
-    text-decoration: none;
-    color: #0366d6;
+.project-tags {
+    margin-top: 15px;
 }
 
-.repo-card h3 a:hover {
-    text-decoration: underline;
+.project-tags span {
+    background-color: #233554;
+    color: #64ffda;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    margin-right: 5px;
 }
 
-.repo-card p {
-    font-size: 0.9em;
-    color: #586069;
-    margin-bottom: 16px;
-    /* Limit description to 3 lines */
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+/* --- Experience Section --- */
+.experience-content h3 {
+    color: #ccd6f6;
+    font-size: 1.5rem;
+}
+.experience-date {
+    color: #a8b2d1;
+    font-style: italic;
+}
+.experience-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.experience-content li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.experience-content li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: #64ffda;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+.skill-tag {
+    background-color: #233554;
+    padding: 8px 12px;
+    border-radius: 4px;
 }
 
-/* Stats at the bottom of the card */
-.repo-stats {
-    font-size: 0.8em;
-    color: #586069;
+/* --- Contact Section --- */
+#contact {
+    text-align: center;
 }
 
-.repo-stats span {
-    margin-right: 16px;
+#contact p {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+#contact .button {
+    font-size: 1.2rem;
+}
+
+.contact-phone {
+    margin-top: 20px;
+    color: #a8b2d1;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
 }

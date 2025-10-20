@@ -3,22 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Portfolio</title>
+    <title>André Eduardo Pereira Pedroso | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <h1>My Developer Portfolio</h1>
-        <p>A list of my public projects from GitHub.</p>
-    </header>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>André Eduardo Pereira Pedroso</h1>
+            <p>Full stack developer specializing in backend systems, data pipelines, and data-driven platforms.</p>
+            
+            <div class="cta-buttons">
+                <a href="#work" class="button">View My Work</a>
+                <a href="#experience" class="button">View Experience</a>
+                <a href="#contact" class="button">Contact Me</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/YOUR_USERNAME" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/andr%C3%A9-eduardo-pereira-pedroso-084087197/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
 
     <main>
-        <section id="repos-container">
-            <p id="loading-message">Loading projects...</p>
+        <section id="work">
+            <h2>My Work & Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>SAE-TO-Application</h3>
+                    <p>A web application developed in Django for analyzing real and financial options, created for university courses in economic engineering.</p>
+                    <div class="project-tags"><span>Django</span><span>Financial Modeling</span></div>
+                </div>
+                <div class="project-card">
+                    <h3>Automated Pavement Simulation Analysis</h3>
+                    <p>A sensitivity analysis project that used Python to automate thousands of simulations on a porous permeable pavement module using the EPA SWMM software.</p>
+                    <div class="project-tags"><span>Python</span><span>Data Automation</span><span>Simulation</span></div>
+                </div>
+                <div class="project-card">
+                    <h3>Stock Price Vizualization</h3>
+                    <p>Next.js application that allows users to search and vizualize for a stock price history based on a given date range.</p>
+                    <div class="project-tags"><span>Type Script</span><span>Technical Writing</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience & Skills</h2>
+            <div class="experience-content">
+                <h3>Full Stack Web Developer - SoftFocus</h3>
+                <p class="experience-date">February 2024 - Present</p>
+                <ul>
+                    <li>Developed and maintained an API integration hub for data analysis, socio-environmental consulting, and credit evaluation.</li>
+                    <li>Implemented data anonymization and privacy protocols to ensure compliance with data protection regulations.</li>
+                    <li>Designed and maintained data pipelines and big data infrastructure using PostgreSQL, Apache Airflow, Kafka, and AWS.</li>
+                    <li>Modeled relational and distributed databases for ETL and real-time data processing.</li>
+                </ul>
+                <h3>Key Skills</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Django</span>
+                    <span class="skill-tag">FastAPI</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Apache Airflow</span>
+                    <span class="skill-tag">PySpark</span>
+                    <span class="skill-tag">Big Data</span>
+                    <span class="skill-tag">Data Pipelines</span>
+                    <span class="skill-tag">Web Scraping</span>
+                    <span class="skill-tag">Agile Development</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+            <a href="mailto:andreeduardopp@gmail.com" class="button">Email Me</a>
+            <p class="contact-phone">Phone: +55 046 99140730</p>
         </section>
     </main>
 
-    <script src="app.js" defer></script>
+    <script src="app.js"></script>
 </body>
 </html>
