@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16222e"/>
+      <stop offset="1" stop-color="#2c3e50"/>
+    </linearGradient>
+  </defs>
+  <rect width="620" height="400" fill="url(#sky)"/>
+
+  <!-- field patches, viewed from above -->
+  <g stroke="#16222e" stroke-width="4" transform="rotate(-8 310 300)">
+    <rect x="30" y="220" width="130" height="90" fill="#5c7a5a"/>
+    <rect x="160" y="220" width="110" height="90" fill="#8a9a5b"/>
+    <rect x="270" y="220" width="150" height="90" fill="#6b8e23" opacity="0.85"/>
+    <rect x="420" y="220" width="170" height="90" fill="#8f7a52"/>
+    <rect x="30" y="310" width="180" height="100" fill="#7a8a4f"/>
+    <rect x="210" y="310" width="140" height="100" fill="#5f6f45"/>
+    <rect x="350" y="310" width="120" height="100" fill="#96845e"/>
+    <rect x="470" y="310" width="120" height="100" fill="#68805c"/>
+  </g>
+
+  <!-- crop row texture -->
+  <g stroke="#16222e" stroke-width="1.5" opacity="0.35" transform="rotate(-8 310 300)">
+    <path d="M40 240h110M40 260h110M40 280h110"/>
+    <path d="M285 240h120M285 260h120M285 280h120"/>
+    <path d="M220 330h115M220 355h115M220 380h115"/>
+  </g>
+
+  <!-- satellite -->
+  <g transform="translate(310 105) rotate(-12)">
+    <rect x="-28" y="-18" width="56" height="36" rx="6" fill="#c5c5c5"/>
+    <rect x="-88" y="-10" width="50" height="20" rx="3" fill="#7fb3d5" stroke="#c5c5c5" stroke-width="3"/>
+    <rect x="38" y="-10" width="50" height="20" rx="3" fill="#7fb3d5" stroke="#c5c5c5" stroke-width="3"/>
+    <circle cx="0" cy="30" r="7" fill="none" stroke="#c5c5c5" stroke-width="3"/>
+  </g>
+
+  <!-- scan beam -->
+  <path d="M310 140 L200 225 L420 225 Z" fill="#7fb3d5" opacity="0.15"/>
+  <path d="M310 140 L200 225 M310 140 L420 225" stroke="#7fb3d5" stroke-width="2" opacity="0.5" stroke-dasharray="6 6"/>
+
+  <!-- label -->
+  <text x="310" y="45" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="26" font-weight="600" fill="#EAEAEA">Sentinel-1 + Sentinel-2</text>
+</svg>

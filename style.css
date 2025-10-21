@@ -592,7 +592,312 @@ footer {
     flex-direction: row;
   }
 
+  .nav-toggle {
+    display: block;
+  }
+
   .main-nav {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(15, 15, 15, 0.97);
+    border-bottom: 1px solid var(--card-border);
+  }
+
+  .main-nav.open {
+    display: block;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 0;
+  }
+
+  .main-nav a {
+    display: block;
+    padding: 12px 25px;
+  }
+
+  .main-nav a::after {
+    display: none;
+  }
+}
+/* --- Hamburger Button --- */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 2px;
+  background: var(--text-color);
+  transition: background 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: var(--text-color);
+  transition: transform 0.3s ease, top 0.3s ease;
+}
+
+.hamburger::before {
+  top: -7px;
+}
+
+.hamburger::after {
+  top: 7px;
+}
+
+.nav-open .hamburger {
+  background: transparent;
+}
+
+.nav-open .hamburger::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.nav-open .hamburger::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+/* --- Education Section --- */
+#education h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+.education-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 30px 35px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.education-degree {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.education-card h3 {
+  color: var(--accent-color);
+  font-size: 1.15rem;
+  margin: 0 0 5px;
+}
+
+.education-card h4 {
+  color: var(--text-color);
+  font-weight: 500;
+  margin: 0 0 15px;
+}
+
+.education-date {
+  font-size: 0.85rem;
+  color: var(--text-secondary-color);
+  white-space: nowrap;
+}
+
+.education-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.education-card li {
+  color: var(--text-secondary-color);
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 18px;
+}
+
+.education-card li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+}
+
+/* --- Publications & Awards Section --- */
+#publications h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.pub-group {
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.pub-group h3 {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+  border-bottom: 1px solid var(--card-border);
+  padding-bottom: 8px;
+  margin-bottom: 18px;
+}
+
+.pub-group h3 i {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.pub-list {
+  margin: 0;
+  padding-left: 25px;
+}
+
+.pub-list li {
+  color: var(--text-secondary-color);
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.pub-list li::marker {
+  color: var(--accent-color);
+}
+
+.awards-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.awards-list li {
+  display: flex;
+  gap: 20px;
+  color: var(--text-secondary-color);
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.award-year {
+  color: var(--accent-color);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  flex-shrink: 0;
+  width: 45px;
+}
+
+/* --- About: Languages --- */
+.about-content .languages {
+  border-top: 1px solid var(--card-border);
+  padding-top: 20px;
+  color: var(--text-secondary-color);
+}
+
+/* --- Experience Section: Responsive --- */
+@media (max-width: 850px) {
+  /* Center the timeline and simplify */
+  .timeline::before {
+    left: 20px;
+  }
+
+  /* All items take full width */
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 20px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  /* Dots align to the left line */
+  .timeline-item::before {
+    left: 10px;
+  }
+
+  /* Remove alternating layout */
+  .timeline-item.left,
+  .timeline-item.right {
+    right: 0;
+    left: 0;
+  }
+
+  /* Adjust content spacing */
+  .timeline-content {
+    padding: 20px;
+  }
+
+  /* Slightly smaller typography for readability */
+  .timeline-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 1rem;
+  }
+
+  .experience-date {
+    font-size: 0.85rem;
+  }
+}
+
+/* Even smaller screens (phones under 500px) */
+@media (max-width: 500px) {
+  #experience {
+    padding: 70px 15px;
+  }
+
+  .timeline::before {
+    left: 15px;
+  }
+
+  .timeline-item {
+    padding-left: 45px;
+  }
+
+  .timeline-content {
+    padding: 18px;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 0.95rem;
+  }
+
+  .timeline-content p,
+  .timeline-content li {
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
 }
