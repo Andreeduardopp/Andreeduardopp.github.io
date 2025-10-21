@@ -319,22 +319,6 @@ header {
 
 
 /* --- 6. Experience Section --- */
-.experience-content {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  padding: 40px;
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
-}
-
-.experience-content h3 {
-  color: var(--accent-color);
-}
-
-.experience-date {
-  color: var(--text-secondary-color);
-  font-style: italic;
-}
 
 .skills-container {
   display: flex;
@@ -348,6 +332,165 @@ header {
   padding: 8px 15px;
   border-radius: 6px;
   font-size: 0.9rem;
+}
+
+/* --- Work Experience Timeline --- */
+#experience {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 20px;
+  position: relative;
+}
+
+#experience h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.experience-subtitle {
+  text-align: center;
+  color: var(--text-secondary-color);
+  margin-bottom: 70px;
+}
+
+/* Timeline vertical line */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.05), rgba(255,255,255,0.25));
+}
+
+/* Each timeline item */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+}
+
+.timeline-item.left {
+  right:7.5%;
+  text-align: left;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+/* Connector dots */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  border: 3px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 8px rgba(154,179,193,0.4);
+}
+
+.timeline-item.left::before {
+  right: -7px;
+}
+
+.timeline-item.right::before {
+  left: -7px;
+}
+
+/* Timeline Content Cards */
+.timeline-content {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Content Text */
+.timeline-content h3 {
+  color: var(--text-color);
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.timeline-content h4 {
+  color: var(--accent-color);
+  margin: 0 0 8px;
+  font-weight: 500;
+}
+
+.experience-date {
+  font-size: 0.9rem;
+  color: var(--text-secondary-color);
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  color: var(--text-secondary-color);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.timeline-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.timeline-content li {
+  color: var(--text-color);
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 18px;
+}
+
+.timeline-content li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+}
+
+/* --- Responsive Layout --- */
+@media (max-width: 850px) {
+  .timeline::before {
+    left: 8px;
+  }
+
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right {
+    width: 100%;
+    padding-left: 40px;
+    text-align: left;
+  }
+
+  .timeline-item::before {
+    left: 0;
+  }
 }
 
 /* --- 7. Contact Section --- */
