@@ -596,3 +596,84 @@ footer {
     display: none;
   }
 }
+/* --- Experience Section: Responsive --- */
+@media (max-width: 850px) {
+  /* Center the timeline and simplify */
+  .timeline::before {
+    left: 20px;
+  }
+
+  /* All items take full width */
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 20px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  /* Dots align to the left line */
+  .timeline-item::before {
+    left: 10px;
+  }
+
+  /* Remove alternating layout */
+  .timeline-item.left,
+  .timeline-item.right {
+    right: 0;
+    left: 0;
+  }
+
+  /* Adjust content spacing */
+  .timeline-content {
+    padding: 20px;
+  }
+
+  /* Slightly smaller typography for readability */
+  .timeline-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 1rem;
+  }
+
+  .experience-date {
+    font-size: 0.85rem;
+  }
+}
+
+/* Even smaller screens (phones under 500px) */
+@media (max-width: 500px) {
+  #experience {
+    padding: 70px 15px;
+  }
+
+  .timeline::before {
+    left: 15px;
+  }
+
+  .timeline-item {
+    padding-left: 45px;
+  }
+
+  .timeline-content {
+    padding: 18px;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 0.95rem;
+  }
+
+  .timeline-content p,
+  .timeline-content li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
