@@ -387,6 +387,32 @@ footer {
 }
 
 /* --- 10. Responsive --- */
+
+/* --- About Me Section --- */
+#about {
+  background-color: var(--card-bg);
+  border-top: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+  color: var(--text-secondary-color);
+}
+
+#about h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
 @media (max-width: 850px) {
   .business-card {
     flex-direction: column;
