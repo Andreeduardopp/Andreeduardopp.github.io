@@ -331,7 +331,7 @@ strong { color: var(--text); font-weight: 600; }
   aspect-ratio: 1;
   height: auto;
   object-fit: cover;
-  object-position: 65% 50%;
+  object-position: 50% 40%;
   border-radius: 22px;
   box-shadow: var(--shadow);
 }
