@@ -3,315 +3,386 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>André Eduardo Pereira Pedroso | Software Engineer</title>
-    <meta name="description" content="André Eduardo Pereira Pedroso — Software engineer and M.Sc. researcher working on data platforms, backend systems, and machine learning for public transportation and smart cities.">
+    <title>André Pedroso | Software Development, Data and AI</title>
+    <meta name="description" content="André Eduardo Pereira Pedroso — software engineer with a Master’s in Production and Systems Engineering, working on full-stack development, data engineering, and artificial intelligence.">
+    <meta name="theme-color" content="#0b1120">
+
+    <!-- Link previews (LinkedIn, WhatsApp, Slack…) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://andreeduardopp.github.io/">
+    <meta property="og:title" content="André Pedroso | Software Development, Data and AI">
+    <meta property="og:description" content="Software engineer working on full-stack development, data engineering, and artificial intelligence for financial institutions and public transit research.">
+    <meta property="og:image" content="https://andreeduardopp.github.io/assets/andre-pedroso.jpg">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1120'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='%232dd4bf'%3EAP%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <header>
-        <div class="header-container">
-            <a href="#hero" class="logo">Profile</a>
-            <nav class="main-nav">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#top" class="logo" aria-label="André Pedroso, back to top">
+                <span class="logo-mark">AP</span>
+                <span class="logo-name">André Pedroso</span>
+            </a>
+            <nav class="main-nav" id="main-nav" aria-label="Main">
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#work">Work</a></li>
+                    <li><a href="#work">Projects</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#publications">Publications</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" class="nav-cta">Contact</a></li>
                 </ul>
             </nav>
-            <button class="nav-toggle" aria-label="toggle navigation">
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
                 <span class="hamburger"></span>
             </button>
         </div>
     </header>
 
-    <section id="hero">
-    <div class="business-card">
-        <div class="card-photo">
-        <img src="assets/AndrePedroso.jpeg" alt="André Pedroso" />
-        </div>
+    <main id="main">
+        <!-- ============ HERO ============ -->
+        <section id="top" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <p class="eyebrow"><span class="status-dot"></span>Software Development, Data and AI</p>
+                    <h1>André Pedroso</h1>
+                    <p class="hero-lead">I am a software engineer with a Master’s degree in Production and Systems Engineering, specializing in decision-making algorithms, with experience in <strong>full-stack development</strong>, <strong>data engineering</strong>, and <strong>artificial intelligence</strong>.</p>
 
-        <div class="card-info">
-        <h1>André Eduardo Pereira Pedroso</h1>
-        <h2>Software Engineer | Data, Backend &amp; Machine Learning</h2>
-        <p>Building data platforms, backend systems, and machine-learning models — from credit-risk pipelines for financial institutions to smart-city transit research.</p>
+                    <ul class="hero-meta">
+                        <li><i class="fa-solid fa-briefcase" aria-hidden="true"></i>Data &amp; AI Engineer at SoftFocus</li>
+                        <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Pato Branco, PR, Brazil</li>
+                    </ul>
 
-        <div class="card-actions">
-            <a href="#work" class="button button-secondary">Portfolio</a>
-            <a href="#contact" class="button button-secondary">Contact</a>
-        </div>
+                    <div class="hero-actions">
+                        <a href="#work" class="button button-primary">See my work <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/andre-eduardo-pereira-pedroso/" target="_blank" rel="noopener" class="button button-ghost"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                        <a href="https://github.com/Andreeduardopp" target="_blank" rel="noopener" class="button button-ghost"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+                    </div>
+                </div>
 
-        <div class="social-links">
-            <a href="https://github.com/Andreeduardopp" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/andre-eduardo-pereira-pedroso/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-        </div>
-    </div>
-    </section>
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <p>I hold a Bachelor's degree in Civil Engineering and am currently completing my M.Sc. in Industrial and Systems Engineering at the Federal University of Technology – Paraná (UTFPR), Brazil. I am also an active researcher on the OPTISUS-IA project, developing research on sustainable mobility transition and network optimization using machine-learning and artificial-intelligence models. As international experience, I took part in the Sandwich Program at the Shibaura Institute of Technology, Japan (2023), and the International Master Program at IPP-Porto, Portugal (2026).</p>
-            <p>During my bachelor's, my research focused on software automation for sustainable development and low-impact development (LID) technologies. This led me to explore smart cities and sustainable transportation during my master's, and my work now spans public transportation, data pipelines, sustainable development, and machine-learning models. I have mainly developed statistical and deep-learning models and software for the public-transit sector, working directly with real operator data from Brazil and Portugal. This work has produced several peer-reviewed conference papers — including one on forecasting public-transport demand for resilient and sustainable smart cities (20th SDEWES Conference, Dubrovnik) and one presenting a conceptual data-pipeline framework for public-transport forecasting (ICEE 2026, Porto) — as well as an open-source toolkit, <em>PID-Transit</em>, for GTFS–NeTEx interoperability, which I am currently preparing as a journal article for <em>Public Transport</em> (Springer).</p>
-            <p>On the OPTISUS-IA project, I collaborate across institutions in two countries: UTFPR and the University of Campinas (Unicamp) in Brazil, and the Polytechnic Institute of Porto and the University of Minho in Portugal. Funded by CNPq (the Brazilian National Council for Scientific and Technological Development), the project aims to develop an integrated artificial-intelligence tool for optimizing sustainable public-transport systems. It has opened new horizons for research on data standards for intermodality and public-transit management and regulation, and has given me the opportunity to build many connections and take part in numerous events.</p>
-            <p>Professionally, I work daily with Python and data analysis, building software for financial institutions in Brazil. This has given me experience with API management, big-data pipelines, and anonymization of sensitive data, including developing solutions that comply with ISO 27001 for data security. My most recent project applies machine learning to crop classification, using indices derived from Sentinel-1/2 satellite imagery to identify crop type, growth stage, and coverage for a given area.</p>
-            <p class="languages"><strong>Languages:</strong> Portuguese (native) · English (proficient) · Spanish (intermediate) · Mandarin Chinese (intermediate)</p>
-        </div>
-    </section>
-    <main>
-        <section id="work">
-            <h2>My Work, Projects and Certification</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="assets/pid-transit.svg" alt="PID-Transit — GTFS and NeTEx interoperability" class="project-image">
-                    <div class="project-card-content">
-                        <h3>PID-Transit — GTFS ⇄ NeTEx Interoperability Toolkit</h3>
-                        <p>Open-source toolkit and web application that helps transit agencies produce and validate data compliant with the GTFS and NeTEx / Transmodel standards. Software registration in progress at NPI/UTFPR; the core of my M.Sc. thesis.</p>
-                        <div class="project-tags"><span>Python</span><span>Django</span><span>React</span><span>PostgreSQL</span></div>
-                        <div class="project-links">
-                            <a href="https://github.com/Andreeduardopp" target="_blank" title="GitHub Profile">
-                                <i class="fa-brands fa-github"></i>
-                                <span>GitHub</span>
-                            </a>
+                <div class="hero-photo">
+                    <img src="assets/andre-pedroso.jpg" alt="Portrait of André Pedroso" width="360" height="360">
+                </div>
+            </div>
+
+            <div class="container">
+                <dl class="stats">
+                    <div><dt>Industry</dt><dd>5+</dd><span>projects for Brazil’s largest financial institutions</span></div>
+                    <div><dt>Research</dt><dd>5</dd><span>institutions across Brazil and Portugal in OPTISUS-IA</span></div>
+                    <div><dt>International</dt><dd>2</dd><span>stays abroad: Japan (2023) and Portugal (2026)</span></div>
+                    <div><dt>Certified</dt><dd>OCI</dd><span>Oracle Cloud Data Science Professional</span></div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- ============ ABOUT ============ -->
+        <section id="about" class="section">
+            <div class="container">
+                <header class="section-head">
+                    <p class="section-kicker">01 · About</p>
+                    <h2>From civil engineering to software, data and AI</h2>
+                </header>
+
+                <div class="about-grid">
+                    <div class="about-content reveal">
+                        <p class="lead">My journey in software development began during my undergraduate capstone project, where I automated the analysis of parameters related to permeable pavements. Subsequently, I joined SoftFocus, where I worked with Django and Angular to develop software solutions for Brazilian financial institutions, such as BB, BNB, and Santander, while expanding my scope to include backend systems, data pipelines, and artificial intelligence applications.</p>
+                        <p>Alongside my professional experience, I conducted research and collaborated with international institutions during my Master’s program. This included participating in two research projects, one of which was an international initiative involving five institutions across Brazil and Portugal, and authoring papers presented at both national and international conferences.</p>
+                        <p>My background combines software development, technical decision-making, and collaborative effort to build practical, scalable solutions.</p>
+                    </div>
+
+                    <aside class="about-side reveal">
+                        <div class="side-block">
+                            <h3>Application areas</h3>
+                            <ul class="focus-list">
+                                <li><i class="fa-solid fa-chart-line" aria-hidden="true"></i><div><strong>Finance</strong><span>Credit analysis and options theory</span></div></li>
+                                <li><i class="fa-solid fa-satellite" aria-hidden="true"></i><div><strong>Agribusiness</strong><span>Agricultural financing and crop classification</span></div></li>
+                                <li><i class="fa-solid fa-bus" aria-hidden="true"></i><div><strong>Sustainable mobility</strong><span>Public transit data, GTFS and NeTEx</span></div></li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="assets/saeto_image.png" alt="$AE-TO options analysis platform" class="project-image">
-                    <div class="project-card-content">
-                        <h3>$AE-TO — Financial and Real Options Analysis Platform</h3>
-                        <p>A Django-based web application for real- and financial-options analysis (Black–Scholes model), used as decision-support material in graduate Economic Engineering courses at UTFPR. Nominated by PPGEPS for the national ENPPEPRO event.</p>
-                        <div class="project-tags"><span>Django</span><span>Financial Modeling</span><span>Bootstrap</span></div>
-                        <div class="project-links">
-                            <a href="https://github.com/Andreeduardopp/saeto" target="_blank" title="GitHub Repository">
-                                <i class="fa-brands fa-github"></i>
-                                <span>View on GitHub</span>
-                            </a>
-                            <a href="https://saeto.pb.utfpr.edu.br/" target="_blank" title="Live Demo">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                <span>Production Application</span>
-                            </a>
+                        <div class="side-block">
+                            <h3>Stack</h3>
+                            <ul class="chips">
+                                <li>Python</li><li>SQL</li><li>Django</li><li>FastAPI</li><li>PostgreSQL</li><li>PostGIS</li><li>MySQL HeatWave</li><li>Redis</li><li>Apache Airflow</li><li>RabbitMQ</li><li>Apache Kafka</li><li>OCI</li><li>Docker</li><li>Argo CD</li><li>Ollama</li><li>MCP</li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="assets/optisus.png" alt="Public transport demand forecasting" class="project-image">
-                    <div class="project-card-content">
-                        <h3>Public Transport Demand Forecasting for Smart Cities</h3>
-                        <p>A comparative analysis of SARIMA, Random Forest, LSTM, and CNN models for public transportation demand forecasting in a data-scarce Brazilian city. Presented at the 20th SDEWES Conference in Dubrovnik, Croatia.</p>
-                        <div class="project-tags"><span>Python</span><span>Time Series</span><span>Machine Learning</span><span>Deep Learning</span></div>
-                        <div class="project-links">
-                            <a href="https://drive.google.com/file/d/1fiTX-4U2jCPekCGdO69s-5mkBnQTpNF5/view?usp=sharing" target="_blank"
-                                title="Link to the Article">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                <span>Read the Article</span>
-                            </a>
+                        <div class="side-block">
+                            <h3>Languages</h3>
+                            <p class="languages">Portuguese <span>native</span> · English <span>advanced</span> · Mandarin <span>intermediate/advanced</span></p>
                         </div>
-                    </div>
+                    </aside>
                 </div>
-                <div class="project-card">
-                    <img src="assets/landuse.svg" alt="Satellite land-use classification" class="project-image">
-                    <div class="project-card-content">
-                        <h3>Land-Use Classification from Satellite Imagery</h3>
-                        <p>Machine-learning model for agricultural land-use classification, combining Sentinel-2 multispectral optical imagery with Sentinel-1 SAR backscatter features to improve crop-type discrimination accuracy.</p>
-                        <div class="project-tags"><span>Python</span><span>Remote Sensing</span><span>Machine Learning</span></div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="assets/swmm.jpeg" alt="SWMM pavement simulation" class="project-image">
-                    <div class="project-card-content">
-                        <h3>SWMM Pavement Simulation and Sensitivity Analysis</h3>
-                        <p>Automated thousands of hydraulic simulations by scripting the US EPA SWMM engine in Python for a sensitivity analysis of permeable-pavement modules — my Civil Engineering final-year thesis.</p>
-                        <div class="project-tags"><span>Python</span><span>Data Automation</span><span>Simulation</span></div>
-                        <div class="project-links">
-                            <a href="https://repositorio.utfpr.edu.br/jspui/handle/1/33968" target="_blank" title="Thesis">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                <span>Read the Thesis</span>
-                            </a>
+            </div>
+        </section>
+
+        <!-- ============ PROJECTS ============ -->
+        <section id="work" class="section section-alt">
+            <div class="container">
+                <header class="section-head">
+                    <p class="section-kicker">02 · Projects</p>
+                    <h2>Selected work</h2>
+                    <p class="section-sub">Research software, production systems, and academic projects.</p>
+                </header>
+
+                <div class="projects-grid">
+                    <article class="project-card featured reveal">
+                        <div class="project-media"><img src="assets/pid-transit.svg" alt="PID-Transit — GTFS and NeTEx interoperability" loading="lazy"></div>
+                        <div class="project-body">
+                            <p class="project-label">2025 – 2026 · M.Sc. dissertation</p>
+                            <h3>PID-Transit | Transit Data Interoperability</h3>
+                            <p>Researcher and main developer of an open-source Python library for producing and validating public transit data, integrating the GTFS and NeTEx standards. The tool helps transit operators achieve data maturity. Software registration in progress with the UTFPR Intellectual Property Office (NPI).</p>
+                            <ul class="tags"><li>Python</li><li>Django</li><li>React</li><li>PostgreSQL</li></ul>
+                            <div class="project-links">
+                                <a href="https://github.com/Andreeduardopp" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="assets/market.jpeg" alt="Stock price analysis app" class="project-image">
-                    <div class="project-card-content">
-                        <h3>Stock Price Analysis Web App</h3>
-                        <p>A full-stack application built with Next.js and Django that allows users to search, visualize, and analyze historical stock price data with an interactive and responsive interface.</p>
-                        <div class="project-tags"><span>TypeScript</span><span>Next.js</span><span>Django</span></div>
-                        <div class="project-links">
-                            <a href="https://github.com/Andreeduardopp/stock-vizualization-frontend" target="_blank" title="GitHub Repository">
-                                <i class="fa-brands fa-github"></i>
-                                <span>Frontend on GitHub</span>
-                            </a>
-                            <a href="https://github.com/Andreeduardopp/stock-vizualization-backend" target="_blank" title="GitHub Repository">
-                                <i class="fa-brands fa-github"></i>
-                                <span>Backend on GitHub</span>
-                            </a>
+                    </article>
+
+                    <article class="project-card featured reveal">
+                        <div class="project-media logo-media"><img src="assets/saeto_image.png" alt="$AE-TO options analysis platform" loading="lazy"></div>
+                        <div class="project-body">
+                            <p class="project-label">2024 – 2026 · Honorable Mention</p>
+                            <h3>$AE-TO | Options Theory Teaching Support System</h3>
+                            <p>Developed a web application to support the teaching of real and financial options analysis. The application received an Honorable Mention at the UTFPR Technology Week and was nominated by PPGEPS to ENPPEPRO, the National Meeting of Graduate Programs in Production Engineering.</p>
+                            <ul class="tags"><li>Django</li><li>Financial Modeling</li><li>Bootstrap</li></ul>
+                            <div class="project-links">
+                                <a href="https://saeto.pb.utfpr.edu.br/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>Live app</a>
+                                <a href="https://github.com/Andreeduardopp/saeto" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>Code</a>
+                            </div>
                         </div>
-                    </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-media logo-media"><img src="assets/optisus.png" alt="OPTISUS logo" loading="lazy"></div>
+                        <div class="project-body">
+                            <p class="project-label">Paper · SDEWES 2025</p>
+                            <h3>Public Transport Demand Forecasting for Smart Cities</h3>
+                            <p>Compared SARIMA, Random Forest, LSTM, and CNN models for public transport demand forecasting in a data-scarce Brazilian city. Paper presented at the 20th SDEWES Conference in Dubrovnik, Croatia.</p>
+                            <ul class="tags"><li>Python</li><li>Time Series</li><li>Machine Learning</li><li>Deep Learning</li></ul>
+                            <div class="project-links">
+                                <a href="https://drive.google.com/file/d/1fiTX-4U2jCPekCGdO69s-5mkBnQTpNF5/view?usp=sharing" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Read the article</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-media"><img src="assets/landuse.svg" alt="Satellite land-use classification" loading="lazy"></div>
+                        <div class="project-body">
+                            <p class="project-label">Industry · SoftFocus</p>
+                            <h3>Crop Classification from Satellite Imagery</h3>
+                            <p>Developed an AI model for crop classification from Sentinel-1 and Sentinel-2 satellite imagery, enabling thousands of crop-type and growth-stage analyses to be performed automatically every day.</p>
+                            <ul class="tags"><li>Python</li><li>Remote Sensing</li><li>Machine Learning</li></ul>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-media"><img src="assets/swmm.jpeg" alt="SWMM pavement simulation" loading="lazy"></div>
+                        <div class="project-body">
+                            <p class="project-label">B.Sc. thesis</p>
+                            <h3>SWMM Pavement Simulation and Sensitivity Analysis</h3>
+                            <p>Undergraduate capstone project where my journey in software development began: automated the analysis of permeable pavement parameters by scripting thousands of US EPA SWMM simulations in Python.</p>
+                            <ul class="tags"><li>Python</li><li>Data Automation</li><li>Simulation</li></ul>
+                            <div class="project-links">
+                                <a href="https://repositorio.utfpr.edu.br/jspui/handle/1/33968" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Read the thesis</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-media"><img src="assets/market.jpeg" alt="Stock price analysis app" loading="lazy"></div>
+                        <div class="project-body">
+                            <p class="project-label">Side project</p>
+                            <h3>Stock Price Analysis Web App</h3>
+                            <p>Developed a full-stack application with Next.js and Django to search, visualize, and analyze historical stock price data.</p>
+                            <ul class="tags"><li>TypeScript</li><li>Next.js</li><li>Django</li></ul>
+                            <div class="project-links">
+                                <a href="https://github.com/Andreeduardopp/stock-vizualization-frontend" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>Frontend</a>
+                                <a href="https://github.com/Andreeduardopp/stock-vizualization-backend" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>Backend</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-                <div class="project-card">
-                    <img src="assets/oracle.jpeg" alt="Oracle certification" class="project-image">
-                    <div class="project-card-content">
+
+                <a class="cert-banner reveal" href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=D3DD7A9F76F71ACC061F33318D59D37054A34D5482D9E4F1F185AAE7094DA3BC" target="_blank" rel="noopener">
+                    <img src="assets/oracle.jpeg" alt="Oracle certification badge" loading="lazy">
+                    <div>
+                        <p class="project-label">Certification</p>
                         <h3>Oracle Cloud Infrastructure 2025 — Certified Data Science Professional</h3>
-                        <p>This certification validates the ability to implement machine-learning solutions on OCI and incorporate best practices for specific business use cases, demonstrating expertise in the field.</p>
-                        <div class="project-tags"><span>OCI</span><span>Machine Learning</span><span>Data Science</span></div>
-                        <div class="project-links">
-                            <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=D3DD7A9F76F71ACC061F33318D59D37054A34D5482D9E4F1F185AAE7094DA3BC" target="_blank" title="Certification">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                <span>Certification Page</span>
-                            </a>
+                        <p>Validates the ability to implement machine learning solutions on Oracle Cloud Infrastructure following best practices for business use cases.</p>
+                    </div>
+                    <span class="cert-cta">Verify <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ============ EXPERIENCE ============ -->
+        <section id="experience" class="section">
+            <div class="container">
+                <header class="section-head">
+                    <p class="section-kicker">03 · Experience</p>
+                    <h2>Work &amp; research</h2>
+                    <p class="section-sub">My professional and research journey across software engineering, data, and sustainable mobility.</p>
+                </header>
+
+                <ol class="timeline">
+                    <li class="timeline-item reveal">
+                        <div class="timeline-meta">
+                            <span class="experience-date">Feb 2024 – Present</span>
+                            <span class="badge">Remote</span>
                         </div>
-                    </div>
-                </div>
+                        <div class="timeline-content">
+                            <h3>Data &amp; AI Engineer / Backend</h3>
+                            <h4>SoftFocus</h4>
+                            <p>Building applications and software for Brazil’s largest financial institutions, with use cases in credit analysis, agricultural financing, and socio-environmental compliance checks. Working across the full range of the development lifecycle, translating upstream requirements into solutions aligned with our application and infrastructure context. Authoring documentation on AI (Spec-Driven Design), best practices, and system architecture.</p>
+                            <ul>
+                                <li>Collaborated on more than 5 projects with multiple developers, doing code review, documentation, and daily alignment, managing tasks on Kanban boards and following the Scrum framework.</li>
+                                <li>Developed an AI model for crop classification from satellite imagery, enabling thousands of crop-type and growth-stage analyses to be performed automatically every day.</li>
+                                <li>LIFT Data 2025: coordinated, with a team, the design and structure of a MySQL HeatWave database on Oracle Cloud Infrastructure, used to develop a model for one of the finalist projects.</li>
+                                <li>Implemented data anonymization and application security for handling sensitive information in financial systems, with a focus on ISO 27001 compliance.</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item reveal">
+                        <div class="timeline-meta">
+                            <span class="experience-date">2025 – Present</span>
+                            <span class="badge">Research</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Lead Developer — OPTISUS-IA</h3>
+                            <h4>UTFPR · Unicamp · UMinho · P.PORTO · ESTG</h4>
+                            <p>Leading the development and architecture choices of the database, backend, and frontend of OPTISUS-IA, an international research project building an integrated artificial intelligence tool to optimize public transport systems and improve their sustainability.</p>
+                            <ul>
+                                <li>The project brings together five institutions across South America and Europe.</li>
+                                <li>Team of more than 20 researchers from engineering, economics, design, and other fields.</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item reveal">
+                        <div class="timeline-meta">
+                            <span class="experience-date">2026 · Portugal</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Visiting Researcher</h3>
+                            <h4>Polytechnic Institute of Porto (P.PORTO)</h4>
+                            <p>Six-month master’s research internship on interoperability and public transit data pipelines, as part of the master’s program at UTFPR.</p>
+                        </div>
+                    </li>
+                </ol>
             </div>
         </section>
 
-        <section id="experience">
-        <h2>Work and Projects Experience</h2>
-        <p class="experience-subtitle">My professional and research journey across software engineering, data, and sustainable mobility.</p>
+        <!-- ============ EDUCATION ============ -->
+        <section id="education" class="section section-alt">
+            <div class="container">
+                <header class="section-head">
+                    <p class="section-kicker">04 · Education</p>
+                    <h2>Education</h2>
+                </header>
 
-        <div class="timeline">
-
-            <!-- Experience Card 1 -->
-            <div class="timeline-item left">
-            <div class="timeline-content">
-                <h3>Full Stack Engineer</h3>
-                <h4>SoftFocus</h4>
-                <p class="experience-date">Feb 2024 – April 2025</p>
-                <p>
-                Contributed to a SAAS product using Django and Angular, where I optimized backend performance, designed scalable database schemas, and collaborated on implementing a modern, responsive UI.
-                </p>
-                <ul>
-                <li>Engineered RESTful APIs with Django and PostgreSQL to support new product features.</li>
-                <li>Developed and maintained the integration of an Angular front-end, serving thousands of active users.</li>
-                <li>Working with CI/CD pipelines and Dockerized deployments.</li>
-                </ul>
-            </div>
-            </div>
-
-            <!-- Experience Card 2 -->
-            <div class="timeline-item right">
-            <div class="timeline-content">
-                <h3>Backend / Data Engineer</h3>
-                <h4>SoftFocus</h4>
-                <p class="experience-date">May 2025 – Present</p>
-                <p>
-                Designing and operating scalable ETL data pipelines that feed data-analysis, socio-environmental, and credit-risk services for financial institutions, with a focus on distributed systems and cloud-ready infrastructure.
-                </p>
-                <ul>
-                <li>Built ETL pipelines with PostgreSQL, Apache Airflow, Apache Kafka, RabbitMQ, and Amazon S3.</li>
-                <li>Implemented high-performance microservices using FastAPI to handle asynchronous data processing.</li>
-                <li>Created asynchronous task queues with Celery and Redis to manage long-running background jobs.</li>
-                <li>Implemented data-security and compliance measures: sensitive-data encryption and dependency hardening, working toward ISO 27001.</li>
-                <li>Trained and deployed machine-learning models using MLflow, TensorFlow, and Python.</li>
-                </ul>
-            </div>
-            </div>
-
-            <!-- Experience Card 3 -->
-            <div class="timeline-item left">
-            <div class="timeline-content">
-                <h3>Researcher — OPTISUS-IA Project</h3>
-                <h4>UTFPR · Unicamp · Polytechnic Institute of Porto · University of Minho</h4>
-                <p class="experience-date">Ongoing · Funded by CNPq</p>
-                <p>
-                International research project between Brazil and Portugal to develop an integrated artificial-intelligence tool for optimizing sustainable public-transport systems.
-                </p>
-                <ul>
-                <li>Developing research on sustainable mobility transition and network optimization using machine-learning and AI models.</li>
-                <li>Built statistical and deep-learning models and software for the public-transit sector, working directly with real operator data from Brazil and Portugal.</li>
-                <li>Researching data standards for intermodality and public-transit management and regulation (GTFS, NeTEx, Transmodel).</li>
-                <li>Collaborating across four institutions in two countries, with participation in international conferences and events.</li>
-                </ul>
-            </div>
-            </div>
-        </div>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <div class="education-grid">
-                <div class="education-card">
-                    <div class="education-degree">
-                        <h3>M.Sc. in Industrial and Systems Engineering</h3>
-                        <span class="education-date">2024 – 2026 (expected)</span>
-                    </div>
-                    <h4>Federal University of Technology – Paraná (UTFPR), Brazil</h4>
-                    <ul>
-                        <li>Thesis: <em>Smart Data for Public Transit: an open-source library for digital transition and GTFS–NeTEx interoperability</em>, supervised by Prof. José Donizetti de Lima.</li>
-                        <li>Focus: software development, machine learning applied to public transportation, smart cities, financial methods in Python, time-series and deep-learning models, and transit-data pipelines.</li>
-                        <li>Current grade average: 9.2 / 10.0.</li>
-                    </ul>
-                </div>
-                <div class="education-card">
-                    <div class="education-degree">
-                        <h3>B.Sc. in Civil Engineering</h3>
+                <div class="education-grid">
+                    <article class="education-card reveal">
+                        <span class="education-date">2024 – 2026 · Expected completion</span>
+                        <h3>M.Sc. in Production and Systems Engineering</h3>
+                        <h4>Federal University of Technology – Paraná (UTFPR)</h4>
+                        <ul>
+                            <li>Research in software development, interoperability, and public transit data pipelines, with applications of machine learning and demand forecasting.</li>
+                            <li>Dissertation: <em>Smart data for public transit: an open-source library for digital transition and GTFS–NeTEx interoperability.</em></li>
+                            <li>Visiting researcher at the Polytechnic Institute of Porto (P.PORTO), Portugal, 2026.</li>
+                        </ul>
+                    </article>
+                    <article class="education-card reveal">
                         <span class="education-date">2017 – 2023</span>
-                    </div>
-                    <h4>Federal University of Technology – Paraná (UTFPR), Brazil</h4>
-                    <ul>
-                        <li>Final-year thesis: sensitivity analysis of permeable pavements via automated hydraulic simulation with the US EPA SWMM.</li>
-                        <li>Exchange: Sandwich Program at the Shibaura Institute of Technology, Japan (2023).</li>
-                        <li>Focus: automation scripting, sustainable development, LID technology, water management, and green cities.</li>
-                    </ul>
+                        <h3>B.Sc. in Civil Engineering</h3>
+                        <h4>Federal University of Technology – Paraná (UTFPR)</h4>
+                        <ul>
+                            <li>Capstone project: automated analysis of permeable pavement parameters with the US EPA SWMM.</li>
+                            <li>Academic exchange in Civil Engineering at the Shibaura Institute of Technology, Japan (one academic year, 2023).</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="publications">
-            <h2>Publications &amp; Awards</h2>
+        <!-- ============ PUBLICATIONS ============ -->
+        <section id="publications" class="section">
+            <div class="container">
+                <header class="section-head">
+                    <p class="section-kicker">05 · Publications</p>
+                    <h2>Publications &amp; awards</h2>
+                </header>
 
-            <div class="pub-group">
-                <h3><i class="fa-solid fa-book-open"></i> Journal Articles (in preparation)</h3>
-                <ol class="pub-list">
-                    <li>"Towards Smart Transportation Systems: A Transmodel-Based Open-Source Toolkit for GTFS–NeTEx Interoperability." Target journal: <em>Public Transport</em> (Springer). <em>In preparation for submission, 2026.</em></li>
-                </ol>
-            </div>
+                <div class="pub-layout">
+                    <div class="pub-group reveal">
+                        <h3><i class="fa-solid fa-book-open" aria-hidden="true"></i>Journal articles <span class="muted">(in preparation)</span></h3>
+                        <ol class="pub-list">
+                            <li>"Towards Smart Transportation Systems: A Transmodel-Based Open-Source Toolkit for GTFS–NeTEx Interoperability." Target journal: <em>Public Transport</em> (Springer). <span class="muted">In preparation for submission, 2026.</span></li>
+                        </ol>
+                    </div>
 
-            <div class="pub-group">
-                <h3><i class="fa-solid fa-file-lines"></i> Peer-Reviewed Conference Papers</h3>
-                <ol class="pub-list">
-                    <li>"Forecasting Public Transport Demand for Resilient and Sustainable Smart Cities." <em>20th SDEWES Conference</em>, Dubrovnik, Croatia.</li>
-                    <li>"Introducing $AE-TO: A Support System for Learning Options Theory." <em>EPPGEP 2025</em> — 9th Meeting of the Graduate Program in Production Engineering, UTFPR.</li>
-                    <li>"Previsão da Demanda de Transporte Público para Cidades Inteligentes Resilientes e Sustentáveis." <em>Semana Tecnológica 2025</em>, UTFPR. <em>In Portuguese.</em></li>
-                    <li>"Apresentando $AE-TO: Sistema de Apoio ao Ensino de Teoria das Opções." <em>Semana Tecnológica 2025</em>, UTFPR. <em>In Portuguese.</em></li>
-                </ol>
-            </div>
+                    <div class="pub-group reveal">
+                        <h3><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Peer-reviewed conference papers</h3>
+                        <ol class="pub-list">
+                            <li>"Forecasting Public Transport Demand for Resilient and Sustainable Smart Cities." <em>20th SDEWES Conference</em>, Dubrovnik, Croatia.</li>
+                            <li>"Introducing $AE-TO: A Support System for Learning Options Theory." <em>EPPGEP 2025</em> — 9th Meeting of the Graduate Program in Production Engineering, UTFPR.</li>
+                            <li>"Previsão da Demanda de Transporte Público para Cidades Inteligentes Resilientes e Sustentáveis." <em>Semana Tecnológica 2025</em>, UTFPR. <span class="muted">In Portuguese.</span></li>
+                            <li>"Apresentando $AE-TO: Sistema de Apoio ao Ensino de Teoria das Opções." <em>Semana Tecnológica 2025</em>, UTFPR. <span class="muted">In Portuguese.</span></li>
+                        </ol>
+                    </div>
 
-            <div class="pub-group">
-                <h3><i class="fa-solid fa-microphone"></i> Conference Presentations</h3>
-                <ol class="pub-list">
-                    <li>"From Collection to Strategic Planning: A Conceptual Data Pipeline Framework for Public Transportation Forecasting." Oral presentation, <em>ICEE 2026 — Energy &amp; Environment</em>, Porto, Portugal.</li>
-                    <li>"Introducing $AE-TO: A Support System for Learning Options Theory." Presentation, <em>ENPPEPRO 2025</em>.</li>
-                </ol>
-            </div>
+                    <div class="pub-group reveal">
+                        <h3><i class="fa-solid fa-microphone" aria-hidden="true"></i>Conference presentations</h3>
+                        <ol class="pub-list">
+                            <li>"From Collection to Strategic Planning: A Conceptual Data Pipeline Framework for Public Transportation Forecasting." Oral presentation, <em>ICEE 2026 — Energy &amp; Environment</em>, Porto, Portugal.</li>
+                            <li>"Introducing $AE-TO: A Support System for Learning Options Theory." Presentation, <em>ENPPEPRO 2025</em>.</li>
+                        </ol>
+                    </div>
 
-            <div class="pub-group">
-                <h3><i class="fa-solid fa-trophy"></i> Awards &amp; Honours</h3>
-                <ul class="awards-list">
-                    <li><span class="award-year">2025</span><span>Technological product $AE-TO nominated by PPGEPS for ENPPEPRO, a national event of the Brazilian Association of Postgraduate Studies and Research in Production Engineering (ANPEPRO).</span></li>
-                    <li><span class="award-year">2025</span><span>Honourable Mention, Technology Week 2025 (Semana Tecnológica), UTFPR.</span></li>
-                    <li><span class="award-year">2013</span><span>Silver Medal, Brazilian Physics Olympiad for Public Schools (OBFEP).</span></li>
-                </ul>
+                    <div class="pub-group reveal">
+                        <h3><i class="fa-solid fa-trophy" aria-hidden="true"></i>Awards &amp; recognition</h3>
+                        <ul class="awards-list">
+                            <li><span class="award-year">2025</span><span>$AE-TO technological product nominated by PPGEPS to ENPPEPRO.</span></li>
+                            <li><span class="award-year">2025</span><span>Honorable Mention at the UTFPR Technology Week.</span></li>
+                            <li><span class="award-year">2013</span><span>Silver Medal, Brazilian Physics Olympiad for Public Schools (OBFEP).</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Get In Touch</h2>
-            <p>I'm always open to discussing new projects, research collaborations, and opportunities. Feel free to reach out!</p>
-            <a target="_blank" href="mailto:andreeduardopp@gmail.com" class="button">Email Me</a>
+        <!-- ============ CONTACT ============ -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-card reveal">
+                    <p class="section-kicker">06 · Contact</p>
+                    <h2>Let's build something together</h2>
+                    <p>I am open to new projects, research collaborations, and opportunities to build practical, scalable solutions.</p>
+                    <div class="hero-actions contact-actions">
+                        <a href="mailto:andreeduardopp@gmail.com" class="button button-primary"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email me</a>
+                        <a href="https://www.linkedin.com/in/andre-eduardo-pereira-pedroso/" target="_blank" rel="noopener" class="button button-ghost"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> Connect on LinkedIn</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; <span id="year">2026</span> André Eduardo Pereira Pedroso. All Rights Reserved.</p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year">2026</span> André Eduardo Pereira Pedroso</p>
+            <div class="footer-links">
+                <a href="https://github.com/Andreeduardopp" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/andre-eduardo-pereira-pedroso/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:andreeduardopp@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
     </footer>
 
     <script src="app.js"></script>
